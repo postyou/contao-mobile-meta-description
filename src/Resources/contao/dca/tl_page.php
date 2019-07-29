@@ -1,6 +1,7 @@
-<?
+<?php
 
 $GLOBALS['TL_DCA']['tl_page']['fields']['mobile_description'] = array(
+        'label'                   => &$GLOBALS['TL_LANG']['tl_page']['mobile_description'],
         'exclude'                 => true,
         'search'                  => true,
         'inputType'               => 'textarea',
@@ -8,7 +9,7 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['mobile_description'] = array(
         'sql'                     => "text NULL"
 );
 
-$GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] = str_replace('description,', 'description,mobile_description,', $GLOBALS['TL_DCA']['tl_page']['palettes']['regular']);
-$GLOBALS['TL_DCA']['tl_page']['palettes']['error_401'] = str_replace('description,', 'description,mobile_description,', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_401']);
-$GLOBALS['TL_DCA']['tl_page']['palettes']['error_403'] = str_replace('description,', 'description,mobile_description,', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_403']);
-$GLOBALS['TL_DCA']['tl_page']['palettes']['error_404'] = str_replace('description,', 'description,mobile_description,', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_404']);
+$GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] = str_replace('description;', 'description,mobile_description;', $GLOBALS['TL_DCA']['tl_page']['palettes']['regular']);
+$GLOBALS['TL_DCA']['tl_page']['palettes']['error_401'] = str_replace('description;', 'description,mobile_description;', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_401']);
+$GLOBALS['TL_DCA']['tl_page']['palettes']['error_403'] = str_replace('description;', 'description,mobile_description;', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_403']);
+$GLOBALS['TL_DCA']['tl_page']['palettes']['error_404'] = str_replace('description;', 'description,mobile_description;', $GLOBALS['TL_DCA']['tl_page']['palettes']['error_404']);
